@@ -1,0 +1,16 @@
+{
+  "name": "petz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.5.0",
+    "faker-br": "^0.4.1",
+    "luxon": "^1.27.0"
+  }
+}
