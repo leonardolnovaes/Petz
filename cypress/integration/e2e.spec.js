@@ -2,19 +2,19 @@
 
 import Checkout from '../support/pages/Checkout'
 import Logon from '../support/pages/Logon'
+import Register from '../support/pages/Register'
 
 
-describe('Checkout', () => {
+describe('Completed', () => {
     beforeEach(() => {
-        Logon.accessLogin()
+        Register.accessRegister()
+        Register.fillData()
+        Register.validadeRegistration()
+        Logon.realizeLogout()
         Logon.fillLogin()
         Logon.validadeLogin()
     })
-    after(() => {
-        //cy.clearLocalStorage()
-        //cy.clearCookies()
-    })
-    it('Put a product in cart and show in checkout', () => {
+    it('Test complete', () => {
         Checkout.chooseProduct()
         Checkout.calculateFreight()
         Checkout.viewCheckout()

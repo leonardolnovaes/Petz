@@ -19,5 +19,8 @@ export const ELEMENTS = {
     confirmPassword: '#confirmasenha',
     showPass: '#showPass',
     showPass2: '#showPass2',
-    buttonCreateNewAccount: '#criarContaButton'
+    buttonCreateNewAccount: '#criarContaButton',
+    closeModalSuccess: 'Entendi',
+    buttonLogin: 'Entrar',
+    createAccountLogin: 'Criar minha conta' 
 }

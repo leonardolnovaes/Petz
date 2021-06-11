@@ -5,8 +5,7 @@ class Logon{
         cy.visit(el.urlHome)
     }
     fillLogin(){
-        cy.get(el.acceptLGPD).click()
-        cy.get(el.componentLogin).trigger('mouseover')
+        //cy.get(el.componentLogin).trigger('mouseover')
         cy.contains(el.buttonComponent).click({force:true})
         cy.readFile('data.json').then((data) => {
             cy.get(el.email).type(data[data.length -1].email, {force:true})
@@ -22,5 +21,8 @@ class Logon{
             console.log(res)
     })
 }
+    realizeLogout(){
+        cy.contains(el.logoutLink).click({force: true}).url().should('eq', el.urlHome)
+    }
 }
 export default new Logon()

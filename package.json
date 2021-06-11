@@ -12,5 +12,8 @@
     "cypress": "^7.5.0",
     "faker-br": "^0.4.1",
     "luxon": "^1.27.0"
+  },
+  "devDependencies": {
+    "cypress-plugin-tab": "^1.0.5"
   }
 }

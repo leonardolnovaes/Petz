@@ -7,9 +7,16 @@ class Register{
     accessRegister(){
         cy.visit(el.urlHome)
         cy.get(el.acceptLGPD).click()        
-        cy.get(el.componentLogin).trigger('mouseover')
+        //cy.get(el.componentLogin).trigger('mouseover')
         cy.contains(el.createAccount).click({force:true})
         .url().should('eq', el.urlRegister)
+    }
+    accessRegisterLogin(){
+        cy.visit(el.urlHome)
+        cy.get(el.componentLogin).trigger('mouseover')
+        cy.contains(el.buttonLogin).click({force:true})
+        cy.contains(el.createAccountLogin).click()
+        
     }
     fillData(){
         let passwordFaker = faker.internet.password(),
@@ -52,6 +59,8 @@ class Register{
         cy.wait('@createdUser').its('response').then(({response}) => {
             console.log(response)
         })
+        cy.contains(el.closeModalSuccess).click()
+        cy.visit(el.urlHome)
     }
 }
 

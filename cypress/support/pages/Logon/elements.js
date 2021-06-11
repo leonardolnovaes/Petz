@@ -6,5 +6,6 @@ export const ELEMENTS = {
     email: '#loginCliente > :nth-child(5) > #email',
     password: '#Senha',
     showPass: '#showPass',
-    buttonLogin: '[value="Entrar"]'
+    buttonLogin: '[value="Entrar"]',
+    logoutLink: 'Sair'
 }

@@ -14,5 +14,12 @@ export const ELEMENTS = {
     continueCheckout: '#continuarEndereco',
     finishOrder: 'Conclua seu pedido',
     urlProduct: 'https://www.petz.com.br/produto/racao-golden-formula-senior-para-caes-adultos-sabor-frango-e-arroz-15kg-71353',
-    urlCart : 'https://www.petz.com.br/comprarAgora_Loja.html'
+    urlCart : 'https://www.petz.com.br/comprarAgora_Loja.html',
+    cepCart: '#carrinhoCep',
+    buttonFreight: '.btn-frete',
+    choosePickup: '#pickupStoreId',
+    normalDelivery: '#entregaNormal',
+    componentAddress: ':nth-child(2) > .reset-margin > .boxes',
+    componentPayment: '.box-pagamento > .reset-margin > .boxes'
+
 }
